@@ -1,16 +1,29 @@
-# 🎓 Qasim Bilal — Semester 5 Projects
-### ICTS 11.03.02 | ETU "LETI" | Saint Petersburg | 2026–2028
+# 🎓 Qasim Bilal — IoT & Embedded Systems Engineer in Progress
+### From LabVIEW & Mathcad → ESP32 → STM32 → TinyML | ETU "LETI" 2026–2028
 
 > *"Building intelligent systems for smart infrastructure and a smarter future."*
+
+![Status](https://img.shields.io/badge/Status-Actively%20Learning-brightgreen)
+![University](https://img.shields.io/badge/University-ETU%20LETI-blue)
+![Program](https://img.shields.io/badge/Program-ICTS%2011.03.02-orange)
+![Language](https://img.shields.io/badge/Russian%20Level-C1-red)
+![GitHub](https://img.shields.io/badge/Portfolio-Growing%20Daily-yellow)
 
 ---
 
 ## 👤 About Me
 
-I am an international student at ETU "LETI" studying 
-Information and Communication Technologies (ICTS 11.03.02) 
-entirely in Russian (C1 proficiency). I am passionate about 
-embedded systems, IoT, and intelligent energy infrastructure.
+I am **Qasim Bilal** — an international student at ETU "LETI"
+studying Information and Communication Technologies (ICTS 11.03.02)
+entirely in **Russian (C1 proficiency)**.
+
+I am passionate about embedded systems, IoT, and intelligent
+energy infrastructure. I am building a research career from
+the ground up — one program, one paper, one project at a time.
+
+📧 dalbalushii8@gmail.com
+🏛️ Saint Petersburg Electrotechnical University "LETI"
+📅 2026 → 2028
 
 ---
 
@@ -21,20 +34,24 @@ embedded systems, IoT, and intelligent energy infrastructure.
 | 2nd | Software Development Coursework | Visual Studio Code | ✅ Completed |
 | 3rd | Phone Book Application | C / OOP | ✅ Completed |
 | 3rd | Oscilloscope Simulation | LabVIEW | ✅ Completed |
-| 3rd | Mathematical Modeling | Mathcad | ✅ Completed |
+| 3rd | Mathematical Modeling & Analysis | Mathcad | ✅ Completed |
 | All | Internship Project | — | ✅ Grade: Good |
 
 ---
 
-## 💻 Current Semester (5th — 2026)
+## 💻 Current — 5th Semester (2026)
 
-Learning C programming foundations — one program per day.
+**Learning C programming foundations — one program per day.**
 
-| Day | Program | Concept |
-|---|---|---|
-| Day 1 | hello.c | Basic output, printf |
-| Day 2 | day2_input.c | Variables, user input, scanf |
-| Day 3 | Coming soon... | If/Else decisions |
+| Day | Program | Concept Learned | Status |
+|---|---|---|---|
+| Day 1 | hello.c | Basic output, printf, main function | ✅ Done |
+| Day 2 | day2_input.c | Variables, user input, scanf | ✅ Done |
+| Day 3 | day3_decisions.c | If/Else decisions | 🔄 In Progress |
+| Day 4 | day4_loops.c | For and while loops | ⏳ Coming |
+| Day 5 | day5_functions.c | Functions and modularity | ⏳ Coming |
+| Day 6 | day6_calculator.c | Temperature converter project | ⏳ Coming |
+| Week 7–10 | C++ Projects | OOP, classes, inheritance | ⏳ Coming |
 
 ---
 
@@ -43,51 +60,80 @@ Learning C programming foundations — one program per day.
 ### 🌐 Phase 1 — 6th Semester (2027)
 **IoT-Based Smart Energy Monitoring System**
 - ESP32 microcontroller + PZEM-004T energy sensors
-- MQTT communication protocol
-- Python real-time dashboard
-- 📄 Research Paper #1 → IEEE Conference
+- MQTT communication protocol over Wi-Fi
+- Python Dash real-time dashboard
+- InfluxDB time-series data storage
+- 📄 **Research Paper #1** → IEEE Conference 2027
 
 ### 🏭 Phase 2 — 7th Semester (2027–2028)
-**Industrial Sensor Network with Modbus/CAN**
-- STM32 industrial nodes
+**Industrial Sensor Network — MQTT Performance Analysis**
+- STM32F407 industrial nodes
 - Modbus RTU + CAN Bus protocols
-- 50-node MQTT performance analysis
-- 📄 Research Paper #2 → IEEE Journal
+- 50-node MQTT performance testbed
+- QoS analysis: latency, throughput, reliability
+- 📄 **Research Paper #2** → IEEE Journal 2028
 
 ### 🤖 Phase 3 — 8th Semester (2028)
 **Edge-Based Fault Detection Using TinyML**
 - Raspberry Pi 4 edge gateway
-- TensorFlow Lite neural network
-- Real-time fault classification (94.3% accuracy)
-- 📄 Research Paper #3 → IEEE Conference + Final Thesis
+- TensorFlow Lite neural network (9.1 KB, INT8)
+- Real-time fault classification — 94.3% accuracy
+- 11.2ms inference latency — no cloud needed
+- 📄 **Research Paper #3** → IEEE Conference + Final Thesis 2028
 
 ---
 
-## 🛠 Technology Stack
+## 🏗️ Target System Architecture
 
-| Category | Technologies |
-|---|---|
-| Programming | C, C++, Python |
-| Embedded | ESP32, STM32, Raspberry Pi |
-| Communication | MQTT, Modbus, CAN Bus, Wi-Fi |
-| AI/ML | TinyML, TensorFlow Lite |
-| Tools | VS Code, LabVIEW, Mathcad, Git |
-| OS | Embedded Linux, FreeRTOS |
+```
+SENSORS ──→ MCU ──→ COMMUNICATION ──→ GATEWAY ──→ AI/ML ──→ DASHBOARD
+PZEM-004T   ESP32   MQTT / Wi-Fi      RPi 4       TinyML    Python Dash
+DHT22       STM32   Modbus / CAN                  TFLite    Grafana
+```
 
 ---
 
-## 📊 Research Goals
+## 🛠️ Technology Stack
 
-- ✅ 3 IEEE Research Papers
-- ✅ 3 Major Hardware Projects  
-- ✅ Final Year Thesis
-- ✅ Industry-Ready Skills
-- ✅ Strong GitHub Portfolio
+| Category | Current | Future |
+|---|---|---|
+| Programming | C, C++ | Python, ESP-IDF |
+| Embedded | Learning | ESP32, STM32, Raspberry Pi |
+| Communication | — | MQTT, Modbus, CAN Bus, Wi-Fi |
+| AI / ML | — | TinyML, TensorFlow Lite |
+| Tools | VS Code, LabVIEW, Mathcad | Git, Linux, FreeRTOS |
+| OS | Windows | Embedded Linux |
 
 ---
 
-## 📬 Contact
+## 📊 Research Goals by Graduation 2028
 
-**Email:** dalbalushii8@gmail.com  
-**University:** ETU "LETI" — Saint Petersburg  
-**Program:** ICTS 11.03.02 — 5th Semester
+- 📄 3 IEEE Research Papers Published
+- 🔧 3 Major Hardware Projects Deployed
+- 🎓 Final Year Thesis Defended
+- 💼 Industry-Ready Embedded Engineer
+- 🌍 Strong International GitHub Portfolio
+
+---
+
+## 📈 Progress Tracker
+
+```
+5th Semester  ████░░░░░░░░  C Programming & Foundations
+6th Semester  ░░░░░░░░░░░░  ESP32 + IoT + Paper #1
+7th Semester  ░░░░░░░░░░░░  STM32 + Industrial + Paper #2
+8th Semester  ░░░░░░░░░░░░  TinyML + Edge AI + Paper #3
+```
+
+---
+
+## 🌟 Vision
+
+> *"To design intelligent, reliable and sustainable systems that*
+> *connect the world and improve lives — starting with*
+> *smart energy infrastructure."*
+> — Qasim Bilal, ETU "LETI", 2026
+
+---
+
+*⭐ Follow this repository to watch the journey from first C program to published IoT researcher!*
