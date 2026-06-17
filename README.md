@@ -47,10 +47,12 @@ the ground up — one program, one paper, one project at a time.
 |---|---|---|---|
 | Day 1 | hello.c | Basic output, printf, main function | ✅ Done |
 | Day 2 | day2_input.c | Variables, user input, scanf | ✅ Done |
-| Day 3 | day3_decisions.c | If/Else decisions | 🔄 In Progress |
-| Day 4 | day4_loops.c | For and while loops | ⏳ Coming |
-| Day 5 | day5_functions.c | Functions and modularity | ⏳ Coming |
-| Day 6 | day6_calculator.c | Temperature converter project | ⏳ Coming |
+| Day 3 | day3_decisions.c | If/Else decisions | ✅ Done |
+| Day 4 | day4_loops.c | For loops - multiplication table | ✅ Done |
+| Day 5 | day5_while.c | While loops - grade average calculator | ✅ Done |
+| Day 6 | day6_functions.c | Functions - simple calculator | ✅ Done |
+| Day 7 | day7_arrays.c | Arrays - student grade tracker | ✅ Done |
+| Day 8 | day8_student_db.c | Structs, Pointers, File I/O - Student Database | ✅ Done |
 | Week 7–10 | C++ Projects | OOP, classes, inheritance | ⏳ Coming |
 
 ---
@@ -119,7 +121,7 @@ DHT22       STM32   Modbus / CAN                  TFLite    Grafana
 ## 📈 Progress Tracker
 
 ```
-5th Semester  ████░░░░░░░░  C Programming & Foundations
+5th Semester  ████████████  C Programming & Foundations ✅
 6th Semester  ░░░░░░░░░░░░  ESP32 + IoT + Paper #1
 7th Semester  ░░░░░░░░░░░░  STM32 + Industrial + Paper #2
 8th Semester  ░░░░░░░░░░░░  TinyML + Edge AI + Paper #3
