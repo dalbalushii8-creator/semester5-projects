@@ -98,6 +98,23 @@ A C++ system that simulates a real predictive-maintenance node — exactly the k
 
 ---
 
+## 🔌 Hardware Prototype — ESP32 Sensor Node
+
+Taking MotorGuard from simulation to **real embedded firmware**.
+
+I built a working **ESP32 + DHT22** sensor node that reads live temperature and runs MotorGuard's fault-detection logic directly on the microcontroller:
+
+- 🌡️ Live temperature reading from a **DHT22** sensor
+- ⚙️ Three-state diagnosis: **OK / WARNING / CRITICAL**
+- 🎚️ Threshold tuning for the sensor's operating range
+- 🔁 `setup()` + `loop()` embedded architecture
+
+This bridges my C++ MotorGuard project to actual hardware — the same sensor-based fault detection used in real motor health monitoring.
+
+🔗 **[Live simulation on Wokwi](https://wokwi.com/projects/467254523497153537)**
+
+---
+
 ## 🛠️ Skills Learned
 
 | Concept | Description |
@@ -114,6 +131,7 @@ A C++ system that simulates a real predictive-maintenance node — exactly the k
 | Constructors | Object initialization |
 | Inheritance | Code reuse across classes |
 | Polymorphism | Flexible, scalable design |
+| Embedded basics | ESP32, sensors, setup()/loop() |
 
 ---
 
@@ -140,7 +158,7 @@ A C++ system that simulates a real predictive-maintenance node — exactly the k
 - Real-time motor fault classification — no cloud needed
 - 📄 **Research Paper #3** → IEEE Conference + Final Thesis 2028
 
-> 💡 *MotorGuard is an early prototype of the thinking behind Phase 3 — multi-sensor fusion for motor fault detection.*
+> 💡 *MotorGuard and the ESP32 sensor node are early prototypes of the thinking behind Phase 3 — multi-sensor fusion for motor fault detection.*
 
 ---
 
@@ -159,10 +177,10 @@ DHT22       STM32   Modbus / CAN                  TFLite    Grafana
 | Category | Current | Future |
 |---|---|---|
 | Programming | C, C++ | Python, ESP-IDF |
-| Embedded | Learning | ESP32, STM32, Raspberry Pi |
+| Embedded | ESP32 (Wokwi), DHT22 sensor | STM32, Raspberry Pi |
 | Communication | — | MQTT, Modbus, CAN Bus, Wi-Fi |
 | AI / ML | — | TinyML, TensorFlow Lite |
-| Tools | VS Code, Git, GCC, g++, LabVIEW, Mathcad | Linux, FreeRTOS |
+| Tools | VS Code, Git, GCC, g++, Wokwi, LabVIEW, Mathcad | Linux, FreeRTOS |
 | OS | Windows | Embedded Linux |
 
 ---
