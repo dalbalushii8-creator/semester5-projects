@@ -80,6 +80,15 @@ It began as a C++ simulation and evolved into a full ESP32-based IoT diagnostic 
 
 🔗 **Live Wokwi Simulation:** [Run MotorGuard ESP32 Sensor Node](https://wokwi.com/projects/467254523497153537)
 
+## 📁 Firmware Files
+
+The ESP32 firmware developed for MotorGuard is organized inside the `firmware/` folder.
+
+| File | Purpose |
+|------|---------|
+| `firmware/motorguard_fft_analyzer_stage5a.ino` | Standalone FFT vibration analyzer used to classify normal running, rotor imbalance, and bearing defect through dominant frequency detection. |
+| `firmware/motorguard_stage5b_integrated.ino` | Full integrated MotorGuard firmware combining sensors, DiagnosticEngine, FFT analysis, OLED display, Wi-Fi connection, HTTP IoT transmission, health score, and multi-fault diagnosis. |
+
 ---
 
 ## 🧠 MotorGuard v1 — C++ Sensor Model
