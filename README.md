@@ -65,28 +65,30 @@ Outputs a health score (0–100%) and maintenance recommendation.
 
 ---
 
-## 🔌 Embedded Prototype — ESP32 Sensor Node
+## 🔌 Embedded IoT Node — ESP32 MotorGuard
 
-**Taking MotorGuard from C++ simulation to real embedded firmware.**
+**A complete IoT predictive-maintenance node — built in 4 stages from C++ simulation to a connected device.**
 
 Built and tested on Wokwi (ESP32 simulator):
 
-- 🌡️ DHT22 — live temperature readings (pin 15)
-- 📳 Potentiometer — vibration simulation (pin 34)
-- ⚡ Potentiometer — current simulation (pin 35)
-- 🔊 Potentiometer — acoustic simulation (pin 32)
-- ⚙️ Full DiagnosticEngine running on the microcontroller
-- 🔴 Real-time fault detection — bearing defect, rotor imbalance, electrical overload, overheating
-- 📊 Health score calculated live from sensor fusion
-- 🔁 Embedded `setup()` + `loop()` architecture (Arduino/ESP-IDF style)
+### Stage 1 — Multi-sensor layer
+- 🌡️ DHT22 — live temperature (pin 15)
+- 📳 Potentiometer — vibration (pin 34)
+- ⚡ Potentiometer — current (pin 35)
+- 🔊 Potentiometer — acoustic (pin 32)
 
-**Verified output (Stage 2 complete):**
-```
-T:24.0C  V:8.6  C:15.0A  A:94.4dB
-[FAULT] Bearing defect (high vib + acoustic)
-[FAULT] Electrical overload (abnormal current)
-Health: 20%
-```
+### Stage 2 — Diagnostic Engine
+Full sensor-fusion fault detection running on the microcontroller — detects bearing defect, rotor imbalance, electrical overload, and overheating, with a live health score (0–100%). Multiple simultaneous faults are diagnosed independently.
+
+### Stage 3 — OLED Display
+128×64 SSD1306 OLED (I2C, pins 21/22) showing live readings, fault status, and health score — a real industrial-style monitor.
+
+### Stage 4 — Wi-Fi / IoT
+ESP32 connects to Wi-Fi and transmits sensor data and diagnosis over HTTP — turning the node into a true connected IoT device (HTTP 200 confirmed).
+
+**Architecture:** 4 sensors → ESP32 (`setup()`/`loop()`) → DiagnosticEngine → OLED + Wi-Fi cloud transmission.
+
+This mirrors real sensor-based predictive-maintenance systems for electrical machines — the foundation for adding FFT signal analysis and TinyML inference (Phase 3).
 
 🔗 **[▶ Run the live simulation on Wokwi](https://wokwi.com/projects/467254523497153537)**
 
@@ -98,7 +100,7 @@ Health: 20%
 |------|--------------|
 | C programming | Structs, pointers, file I/O, functions |
 | C++ OOP | Classes, inheritance, polymorphism, virtual functions |
-| Embedded firmware | ESP32, setup/loop, analogRead, Serial, DHT22 |
+| Embedded firmware | ESP32, setup/loop, I2C OLED, Wi-Fi/HTTP, multi-sensor |
 | Sensor integration | DHT22, analog potentiometers, multi-sensor fusion |
 | Fault detection logic | Threshold-based, multi-signal fusion rules |
 | Tools | VS Code, g++, Git, GitHub, Wokwi |
