@@ -83,7 +83,7 @@ It began as a C++ simulation and evolved into a full ESP32-based IoT diagnostic 
 
 ## 📁 Project Files
 
-The ESP32 firmware is organized inside the `firmware/` folder; the Python real-data analysis lives in `analysis/`.
+The ESP32 firmware is organized inside the `firmware/` folder; the Python real-data analysis scripts are in the repository root.
 
 | File | Purpose |
 |------|---------|
