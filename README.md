@@ -89,8 +89,8 @@ The ESP32 firmware is organized inside the `firmware/` folder; the Python real-d
 |------|---------|
 | `firmware/motorguard_fft_analyzer_stage5a.ino` | Standalone FFT vibration analyzer that classifies normal running, rotor imbalance, and bearing defect by dominant-frequency detection. |
 | `firmware/motorguard_stage5b_integrated.ino` | Full integrated MotorGuard firmware: sensors, DiagnosticEngine, FFT, OLED, Wi-Fi, HTTP IoT, health score, multi-fault diagnosis. |
-| `analysis/analyze_bearing.py` | Loads a real CWRU `.mat` recording, runs envelope-FFT analysis, and compares the detected fault frequency against the physics-predicted value. |
-| `analysis/plot_bearing.py` | Plots the envelope spectra of a healthy vs faulty bearing side by side. |
+| `analyze_bearing.py` | Loads a real CWRU `.mat` recording, runs envelope-FFT analysis, and compares the detected fault frequency against the physics-predicted value. |
+| `plot_bearing.py` | Plots the envelope spectra of a healthy vs faulty bearing side by side. |
 
 ---
 
@@ -352,6 +352,10 @@ Difference:                0.2 %
 RESULT: MATCH - outer-race fault confirmed.
 --------------------------------------------------
 ```
+
+![Healthy vs faulty bearing envelope spectra](bearing_comparison.png)
+
+*Envelope FFT of both bearings. The healthy bearing (top) shows only shaft rotation; the faulty bearing (bottom) shows a clear peak at the predicted outer-race fault frequency plus harmonics.*
 
 **Why this stage matters:** unlike the synthetic pipeline tests, here the fault frequency was **predicted from first principles** and then **confirmed in independent real recordings** — and the method correctly separates a faulty bearing from a healthy one. This is genuine bearing-fault detection, not a self-referential test.
 
